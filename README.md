@@ -7,6 +7,23 @@ There are at least 2 folders you would want to map into the container (or use a 
 For the `/certs` folder:
 This folder will contain your own TLS cert and key file if you opt to use one.  The `TLS_CERT` and `TLS_KEY` environment variable should match the name of the file(s) that you places in the `/certs` folder.
 
+# How to build your image
+It's time to build our image. We're going to name the image `micromdm`. To do this, issue the command:
+```
+docker build -t micromdm .
+```
+
+# How to tag and push the image
+Finally, we're going to tag our new image and then push it to Docker Hub. First tag the image with :latest using the command:
+```
+docker image tag micromdm vinayaroradocker/micromdm:latest
+```
+
+Now that the image is tagged, we can push it to Docker Hub with:
+```
+docker image push vinayaroradocker/micromdm:latest
+```
+
 You can see the logs of the running container by using `docker logs` for example:
 ```
 docker logs micromdm
@@ -18,14 +35,22 @@ docker logs micromdm
   - Latest release
 - `pre-release`
   - Latest pre-release
-- `1.2.0`
-- `1.3.0`
-- `1.3.1`
-- `1.4.0`
-- `1.5.0`
-- `1.6.0`
-- `1.7.0-alpha`
+- `1.8.0`
 - `1.7.1`
+- `1.7.0-alpha`
+- `1.6.0`
+- `1.5.0`
+- `1.4.0`
+- `1.3.1`
+- `1.3.0`
+- `1.2.0`
+
+
+
+
+
+
+
 
 ### Example Usage
 
