@@ -1,6 +1,6 @@
 FROM alpine:3.3
 
-ENV MICROMDM_VERSION=1.8.0
+ENV MICROMDM_VERSION=1.9.0
 ENV PATH="/:${PATH}"
 
 COPY run.sh /run.sh

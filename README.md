@@ -35,6 +35,7 @@ docker logs micromdm
   - Latest release
 - `pre-release`
   - Latest pre-release
+- `1.9.0`
 - `1.8.0`
 - `1.7.1`
 - `1.7.0-alpha`
